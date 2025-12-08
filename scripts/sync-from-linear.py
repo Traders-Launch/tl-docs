@@ -24,11 +24,20 @@ CHANGELOG_PATH = DOCS_REPO_PATH / "changelog"
 
 # Linear document IDs to sync (map to local paths)
 # These are documents marked for public sync in Linear
+# Only include docs that should be PUBLIC - internal docs stay in Linear only
 SYNC_CONFIG = {
-    # Format: "linear_doc_id": "local_path"
-    # Add documents here as they're created in Linear
-    # Example:
-    # "f188aa09-5107-4c8f-8f65-846877c63c62": "getting-started/overview.md",
+    # Customer-facing help content
+    "0d930b59-71f8-4a4a-a499-1e568f68fbc5": "help/customer-support-playbook.md",  # Customer Support Playbook
+    "e004f910-d86a-492c-8f39-208edb91f767": "help/payout-processing.md",  # Payout Processing SOP
+
+    # Internal docs (NOT synced to public - keep commented)
+    # "c8227eef-3177-48fa-a0b6-a0f57e171e8c": "TL Team Handbook",
+    # "6e69a3bd-0bb1-4d9c-8b08-20994d79ebed": "New Team Member Onboarding",
+    # "075e5612-cf06-4f48-ac0c-11bd833db4bc": "PRD Template",
+    # "885aa29b-ae67-4aee-81a6-7e0016bfd220": "Product Roadmap Q1 2026",
+    # "9f10c105-9ef3-41dd-9b7f-7aed83933242": "ML Model Documentation",
+    # "1f8aa386-bf7e-4a55-ac59-39014002ca95": "Campaign Brief Template",
+    # "0798d3ed-84de-4b53-8f48-b79e2c884970": "Trading Platform Architecture",
 }
 
 # Project IDs for changelog entries
