@@ -10,6 +10,7 @@ const sidebars: SidebarsConfig = {
         'getting-started/overview',
         'getting-started/products',
         'getting-started/rules',
+        'getting-started/coming-soon',
       ],
     },
     {
